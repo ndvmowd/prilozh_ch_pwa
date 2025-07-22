@@ -1,0 +1,4 @@
+2025-07-21 13:55:44 - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hair_salon.feedback' doesn't exist
+2025-07-21 13:59:31 - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+2025-07-21 14:00:53 - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+2025-07-21 14:01:13 - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="header">
+        <img src="лого.jpeg" class="logo">
+        <h1 style="color:white">Приветствую!</h1>
+        <h3 style="color:white">Этот сайт парикмахерской был разработан Чуриковым Максимом АИ-24-02</h3>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Меню</button>
+        <div class="dropdown-content">
+            <a href="churikov.html">Главная</a>
+            <a href="about.html">Прически</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="svyaz.html">Обратная связь</a>
+        </div>
+    </div>
+    <div class="background-block"></div>
+
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered'))
+                .catch(err => console.log('SW registration failed: ', err));
+        });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <title>Прически</title>
+</head>
+<body>
+    <div class="header">
+        <img src="лого.jpeg" class="logo">
+        <h1>Приветствую!</h1>
+        <h3>Этот сайт парикмахерской был разработан Чуриковым Максимом АИ-24-02</h3>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Меню</button>
+        <div class="dropdown-content">
+            <a href="churikov.html">Главная</a>
+            <a href="about.html">Прически</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="svyaz.html">Обратная связь</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="dop">Список причесок и рекомендации по уходу</h2>
+        
+        <div class="haircut-container">
+            <div class="haircut-list">
+                <div class="haircut-block">
+                    <img src="маллет.jpg" alt="Маллет" class="haircut-image">
+                    <div class="haircut-text">
+                        <h3 class="haircut-name">Маллет</h3>
+                        <p>Его главная особенность - многослойность, иногда - с очень сильным и резким перепадом длины.</p>
+                    </div>
+                </div>
+                
+                <div class="haircut-block">
+                    <img src="шегги.jpg" alt="Шегги" class="haircut-image">
+                    <div class="haircut-text">
+                        <h3 class="haircut-name">Шегги</h3>
+                        <p>Воздушная, небрежная и хаотичная стрижка, которая понравится творческой молодежи. Очень расслабленный повседневный вариант, не нуждающийся в укладке и сложном уходе.</p>
+                    </div>
+                </div>
+                
+                <div class="haircut-block">
+                    <img src="кроп.jpg" alt="Кроп" class="haircut-image">
+                    <div class="haircut-text">
+                        <h3 class="haircut-name">Кроп</h3>
+                        <p>Классика с короткими висками и затылком. Верх кропа напоминает объемную и немного взъерошенную шапочку. Особенно хорошее решение для кудрявых волос!</p>
+                    </div>
+                </div>
+                
+                <div class="haircut-block">
+                    <img src="каскад.jpg" alt="Каскад" class="haircut-image">
+                    <div class="haircut-text">
+                        <h3 class="haircut-name">Каскад</h3>
+                        <p>Главная особенность - пряди разной длины, отсутствие четкого среза и формы.</p>
+                    </div>
+                </div>
+                
+                <div class="haircut-block">
+                    <img src="каре.jpg" alt="Каре" class="haircut-image">
+                    <div class="haircut-text">
+                        <h3 class="haircut-name">Каре</h3>
+                        <p>Основной признак — средняя длина с аккуратно подстриженными боками и выраженным верхом. Обычно делаются симметричные линии.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="care-tips">
+
+                
+                <div class="care-block">
+                    <h3 class="care-title">Для маллета</h3>
+                    <p>• Используйте текстурные спреи</p>
+                    <p>• Сушите феном с круглой щеткой</p>
+                    <p>• Раз в месяц корректируйте форму</p>
+                </div>
+                
+                <div class="care-block">
+                    <h3 class="care-title">Для шегги</h3>
+                    <p>• Минимальный уход - просто расчешите</p>
+                    <p>• Можно использовать воск для текстуры</p>
+                    <p>• Обновляйте стрижку каждые 6-8 недель</p>
+                </div>
+                
+                <div class="care-block">
+                    <h3 class="care-title">Для кропа</h3>
+                    <p>• Короткие стрижки требуют частой коррекции</p>
+                    <p>• Используйте мусс для объема</p>
+                    <p>• Раз в 3-4 недели посещайте мастера</p>
+                </div>
+                
+				<div class="care-block">
+                    <h3 class="care-title">Общие советы</h3>
+                    <p>• Мойте волосы не чаще 2-3 раз в неделю</p>
+                    <p>• Используйте термозащиту перед укладкой</p>
+                    <p>• Регулярно подстригайте кончики</p>
+                    <p>• Подбирайте средства по типу волос</p>
+                </div>
+				
+                <div class="care-block">
+                    <h3 class="care-title">Продукты</h3>
+                    <p>• Шампунь для объема</p>
+                    <p>• Термозащитный спрей</p>
+                    <p>• Текстурная глина</p>
+                    <p>• Увлажняющая маска</p>
+				</div>
+            </div>
+        </div>
+    </div>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered'))
+                .catch(err => console.log('SW registration failed: ', err));
+        });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <title>Контакты</title>
+    <style>
+        .dop-block {
+            border: 2px solid black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            padding: 15px;
+            width: 600px;
+            margin-left: 280px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="лого.jpeg" class="logo">
+        <h1>Приветствую!</h1>
+        <h3>Этот сайт парикмахерской был разработан Чуриковым Максимом АИ-24-02</h3>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Меню</button>
+        <div class="dropdown-content">
+            <a href="http://localhost/new/churikov.html">Главная</a>
+            <a href="http://localhost/new/about.html">Прически</a>
+            <a href="http://localhost/new/contacts.html">Контакты</a>
+            <a href="http://localhost/new/svyaz.html">Обратная связь</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="dop">Контакты</h2>
+        
+        <div class="dop-block">
+            <div class="dop-text">
+                <h3 class="haircut-name">Наш салон</h3>
+                <p>Адрес: г. Москва, ул. Тверская, д. 18, 3 этаж</p>
+                <p>Ближайшее метро: Тверская, Пушкинская, Чеховская</p>
+                <p>Вход через арку, код домофона 18#</p>
+            </div>
+        </div>
+        
+        <div class="dop-block">
+            <div class="dop-text">
+                <h3 class="haircut-name">Режим работы</h3>
+                <p>Пн-Пт: 9:00 - 21:00</p>
+                <p>Сб-Вс: 10:00 - 20:00</p>
+                <p>Без выходных и перерывов</p>
+            </div>
+        </div>
+        
+        <div class="dop-block">
+            <div class="dop-text">
+                <h3 class="haircut-name">Контакты для записи</h3>
+                <p>Телефон: +7 (495) 123-45-67</p>
+                <p>WhatsApp: +7 (925) 765-43-21</p>
+                <p>Email: luxuryhair@gmail.com</p>
+                <p>Instagram: @luxuryhair_moscow</p>
+            </div>
+        </div>
+        
+        <div class="dop-block">
+            <div class="dop-text">
+                <h3 class="haircut-name">Как добраться</h3>
+                <p>От метро Тверская: 3 минуты пешком в сторону центра.</p>
+                <p>На машине: парковка во дворе (первые 30 минут бесплатно).</p>
+            </div>
+        </div>
+        
+        <div class="dop-block">
+            <div class="dop-text">
+                <h3 class="haircut-name">Наши преимущества</h3>
+                <p>Бесплатный Wi-Fi и кофе для клиентов</p>
+                <p>Подарочные сертификаты</p>
+                <p>Система лояльности (10% скидка на 5-й визит)</p>
+                <p>Детская зона для маленьких клиентов</p>
+            </div>
+        </div>
+    </div>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => console.log('SW registered'))
+                .catch(err => console.log('SW registration failed: ', err));
+        });
+    }
+    </script>
+</body>
+</html>
